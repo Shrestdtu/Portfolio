@@ -3,7 +3,7 @@
 // })
 function visitPage() {
   window.location =
-    "https://drive.google.com/file/d/1BuYKwKmTJrAZ6VqLRF7Ss5bRXU5IXwGl/view?usp=sharing";
+    "https://drive.google.com/file/d/1ACHiwuCNsIVO0XBBufZ5utwZ11U22o7Q/view?usp=sharing";
 }
 function fb() {
   window.location = "https://www.facebook.com/diamond.saroha/";
