@@ -1,148 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="nav">
-            <span class="firstname">
-                SHREST
-            </span>
-            <div class="other">
-                <a class="middle" href="http://google.com" target="_blank">Home</a>
-                <a class="middle" href="http://" target="_blank">About</a>
-                <a class="middle" href="http://" target="_blank">Skills</a>
-                <!-- <a class="middle" href="http://" target="_blank">A</a> -->
-                <a class="middle" href="http://" target="_blank">Portfolio</a>
-                <a class="middle" href="http://" target="_blank">Contact me</a>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <span class="firstname">SHREST</span>
+        <div class="other">
+          <a class="middle" href="#homesection">Home</a>
+          <a class="middle" href="#aboutsection">About</a>
+          <a class="middle" href="#skillsection">Skills</a>
+          <a class="middle" href="#portfolio">Portfolio</a>
+          <a class="middle" href="#footer">Contact me</a>
         </div>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      </div>
+    </header>
+    <section class="homesection" id="homesection">
+      <div class="main">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
         <div class="socialmedia">
-            <div class="wrapper">
-                <div class="button">
-                   <div class="icon">
-                      <i class="fab fa-facebook-f"></i>
-                   </div>
-                   <span>Facebook</span>
-                </div>
-                <div class="button">
-                   <div class="icon">
-                      <i class="fab fa-twitter"></i>
-                   </div>
-                   <span>Twitter</span>
-                </div>
-                <div class="button">
-                   <div class="icon">
-                      <i class="fab fa-github"></i>
-                   </div>
-                   <span>Github</span>
-                </div>
-                <div class="button">
-                   <div class="icon">
-                      <i class="fab fa-linkedin"></i>
-                   </div>
-                   <span>LinkedIn</span>
-                </div>
-                <div class="button">
-                   <div class="icon">
-                      <i class="fab fa-youtube"></i>
-                   </div>
-                   <span>YouTube</span>
-                </div>
-             </div>
-            <!-- <div class="github">
-                <a class="githublink" href="https://github.com/Shrestdtu" target="_blank">
-                    <img class="github" src="kk.png" alt="">
-                </a>
+          <div class="wrapper">
+            <div class="button" onclick="fb();">
+              <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <span>Facebook</span>
             </div>
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/shrest-saroha-9102b01a2/" target="_blank">
-                    <img class="linkedin" src="lfinal-removebg-preview.png" alt="">
-                </a>
+            <div class="button" onclick="twitter();">
+              <div class="icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <span>Twitter</span>
             </div>
-            <div class="fb">
-                <a href="https://www.facebook.com/diamond.saroha/" target="_blank">
-                    <img class="fb" src="fb-removebg-preview.png" alt="">
-                </a>
+            <div class="button" onclick="github();">
+              <div class="icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <span>Github</span>
             </div>
-            <div class="twitter">
-                <a href="https://twitter.com/i/flow/login" target="_blank">
-                    <img class="twitter" src="tw-removebg-preview.png" alt="">
-                </a>
-            </div> -->
+            <div class="button" onclick="linkedin();">
+              <div class="icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <span>LinkedIn</span>
+            </div>
+            <div class="button" onclick="instagram();">
+              <div class="icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </div>
+          </div>
         </div>
         <h1 class="ml9">
-            <div class="text-wrapper">
-              <div class="letters">WELCOME TO MY WEBSITE</div>
-            </div>
+          <div class="text-wrapper">
+            <div class="letters">WELCOME TO MY WEBSITE</div>
+          </div>
         </h1>
         <div class="intro1"><span class="autochange"></span></div>
-        <!-- <div class="intro2">
-            I am a 3rd year Undergrad at DTU pursuing B.Tech in Environmental Engineering.<br>
-            I am a Programmer who is passionate about solving problems and turning thoughts <br>to code and also loves to participate in contests.
-            Also I have a good knowledge in <br>Data Structures and algorithms and is also currently exploring Web Development.
-        </div> -->
         <div class="card">
-            <div class="circle"></div>
-            <div class="content">
-                I am a 3rd year Undergrad at DTU pursuing B.Tech in Environmental Engineering.
-                I am a Programmer who is passionate about solving problems and turning thoughts to code and also loves to participate in contests,
-                and also I have a good knowledge in Data Structures and algorithms and is also currently exploring Web Development.
-            </div>
-            <img src="hi-removebg-preview.png">
+          <div class="content">
+            I am a 3rd year Undergrad at DTU pursuing B.Tech in Environmental
+            Engineering. I am a Programmer who is passionate about solving
+            problems and turning thoughts to code and also loves to participate
+            in contests, and also I have a good knowledge in Data Structures and
+            algorithms and is also currently exploring Web Development.
+          </div>
+          <img src="images/hi-removebg-preview.png" alt="blueimg" />
         </div>
-        <input class="cv" onclick="visitPage();" id="cv" type="button" value="  DOWNLOAD CV  " >
-        <!-- <div class="button">SEND</div> -->
-        <div class="aboutme">
-            <div class="about">About me</div>
-            <!-- <span class="divider2"></span> -->
-            <div class="aboutmehead">I am Shrest, a Programmer and a Frontend Developer</div>
-            <div class="bhai">
-                <p><img class="hii" src="ds.png" alt="Pineapple">
-                    Hello! I'm Shrest, a final year B.Tech student based in Delhi, INDIA. Currently, I'm actively looking for an SDE role. I have a bunch of ideas and searching for a path to show them off. I want to learn continuously and smartly and use those skills to develop various products and contribute to the open-source community. Being a smart-coding enthusiast, I am always ready for new coding challenges and try to find the best solution to the problems in multiple programming languages, viz. C++, C, python etc. I have been exploring Web Development.
-                </p>
-            </div>
-            
-                <!-- <img class="hi" src="ds.png" alt="Pineapple"> -->
-            <!-- <div class="aboutmedetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ad aspernatur quidem beatae maxime non harum. Dignissimos iste quidem, officia impedit minima itaque perferendis, nihil vero assumenda quisquam molestias delectus!
-            Quidem sit quam tempore porro amet quae rerum impedit beatae maxime reiciendis quibusdam perferendis dicta, unde mollitia, modi ipsa fugit similique excepturi voluptate ducimus nisi qui corrupti. Accusamus, accusantium sint?
-            Deserunt error doloremque odio at qui facere minima quisquam adipisci sint aliquam blanditiis vel consequatur, amet dolorem quis natus ipsum! Veniam ad distinctio dolore ipsam blanditiis fugit, ut magni corrupti.
-            Quis distinctio exercitationem tempora error ipsa commodi minima voluptate dolor quidem asperiores sit ullam possimus dignissimos officia enim eum quos, accusamus veniam culpa harum dolorem. Blanditiis quibusdam iure accusamus soluta.</div> -->
-            <div class="details1">
-                <p><span class="check">Age: </span>20</p>
-                <span class="divider"></span>
-                <p><span class="check">City: </span>New Delhi</p>
-                <span class="divider"></span>
-                <p><span class="check">Country: </span>India</p>
-                <span class="divider"></span>
-                <p><span class="check">Degree: </span>Btech</p>
-                <span class="divider"></span>
-            </div>
-            <div class="details2">
-                <p><span class="check" >Email: </span>shrestsaroha2017@gmail.com</p>
-                <span class="divider1"></span>
-                <p><span class="check" >Phone: </span>+91 9560531659</p>
-                <span class="divider1"></span>
-                <p><span class="check" >Development: </span>Frontend</p>
-                <span class="divider1"></span>
-                <p><span class="check" >Languages: </span>English,Hindi</p>
-                <span class="divider1"></span>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="about">Skills</div>
+        <input
+          class="cv"
+          onclick="visitPage();"
+          id="cv"
+          type="button"
+          value="  DOWNLOAD CV  "
+        />
+      </div>
+    </section>
 
+    <section class="aboutsection" id="aboutsection">
+      <div class="about">About me</div>
+      <div class="aboutmehead">
+        I am Shrest, a Programmer and a Frontend Developer
+      </div>
+      <div class="aboutmeinfo">
+        <p>
+          <img class="aboutmeimg" src="images/ds.png" alt="shrestimg" />
+          Hi there! I am Shrest and I am currently studying in the last year of
+          my B.Tech at Delhi University in India. Currently, I am looking for an
+          SDE position. I have a bunch of ideas and searching for a path to show
+          them off. I want to learn continuously and smartly and use those
+          skills to develop various products and contribute to the open-source
+          community. Being a smart-coding enthusiast, I am always ready for new
+          coding challenges and try to find the best solution to the problems in
+          multiple programming languages, viz. C++, C, python etc. I have been
+          exploring Web Development.
+        </p>
+      </div>
+      <div class="details1">
+        <p><span class="check">Age: </span>20</p>
+        <span class="divider"></span>
+        <p><span class="check">City: </span>New Delhi</p>
+        <span class="divider"></span>
+        <p><span class="check">Country: </span>India</p>
+        <span class="divider"></span>
+        <p><span class="check">Degree: </span>Btech</p>
+        <span class="divider"></span>
+      </div>
+      <div class="details2">
+        <p><span class="check">Email: </span>shrestsaroha2017@gmail.com</p>
+        <span class="divider1"></span>
+        <p><span class="check">Phone: </span>+91 9560531659</p>
+        <span class="divider1"></span>
+        <p><span class="check">Development: </span>Frontend</p>
+        <span class="divider1"></span>
+        <p><span class="check">Languages: </span>English,Hindi</p>
+        <span class="divider1"></span>
+      </div>
+    </section>
+
+    <section class="skillsection" id="skillsection">
+      <div class="skillhead">Skills</div>
+      <div class="skill-section">
+        <div class="skills-container">
+          <div class="skill-card">
+            <img src="images/c++.png" alt="" class="skill-img" />
+            <div class="skill-level">95%</div>
+            <h1 class="skill-name">C++</h1>
+            <p class="skill-info">1.5+ year</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/html.png" alt="" class="skill-img" />
+            <div class="skill-level">90%</div>
+            <h1 class="skill-name">HTML</h1>
+            <p class="skill-info">10 months+</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/css1.webp" alt="" class="skill-img" />
+            <div class="skill-level">85%</div>
+            <h1 class="skill-name">CSS</h1>
+            <p class="skill-info">10 months+</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/js.png" alt="" class="skill-img" />
+            <div class="skill-level">80%</div>
+            <h1 class="skill-name">JS</h1>
+            <p class="skill-info">6 months+</p>
+          </div>
+          <div class="skill-card">
+            <img src="images/sql.png" alt="" class="skill-img" />
+            <div class="skill-level">80%</div>
+            <h1 class="skill-name">SQL</h1>
+            <p class="skill-info">10 months+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h1 class="heading">Education</h1>
+      <div class="box-container">
+        <div class="box">
+          <span class="number">B.tech</span>
+          <h3>
+            <div class="year"><i class="fas fa-calendar"></i> 2019 - 2023</div>
+          </h3>
+          <p>
+            I am currently studying in the last year of <br />
+            my B.Tech at Delhi Technological University.
+          </p>
         </div>
 
-    </div>
+        <div class="box">
+          <span class="number">12th</span>
+          <h3>
+            <div class="year"><i class="fas fa-calendar"></i> 2018 - 2019</div>
+          </h3>
+          <p>
+            I have completed my 12th from D.A.V Narela<br />
+            in the field of science.
+          </p>
+        </div>
+
+        <div class="box">
+          <span class="number">10th</span>
+          <h3>
+            <div class="year"><i class="fas fa-calendar"></i> 2016 - 2017</div>
+          </h3>
+          <p>I have completed my 10th from D.A.V Narela<br /></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading">My Projects</h1>
+
+      <div class="box-container">
+        <a href="#" target="_blank" class="box">
+          <img src="images/portfolio.png" alt="" />
+          <div class="info">Portfolio</div>
+        </a>
+
+        <a
+          href="https://github.com/Shrestdtu/Codeforces-Profile-Analyser"
+          target="_blank"
+          class="box"
+        >
+          <img src="images/Codeforces-profile-analyser.png" alt="" />
+          <div class="info">Codeforces Profile Analyser</div>
+        </a>
+
+        <a
+          href="https://github.com/Shrestdtu/Company-Management-System"
+          target="_blank"
+          class="box"
+        >
+          <img src="images/companymgmt.jpg" alt="" />
+          <div class="info">Company Management System</div>
+        </a>
+
+        <a
+          href="https://github.com/Shrestdtu/Tic-Tac-Toe-game"
+          target="_blank"
+          class="box"
+        >
+          <img src="images/tictactoe.png" alt="" />
+          <div class="info">Tic Tac Toe</div>
+        </a>
+
+        <a href="#" target="_blank" class="box">
+          <img src="images/calculator.png" alt="" />
+          <div class="info">Calculator</div>
+        </a>
+
+        <a
+          href="https://github.com/Shrestdtu/Company-Management-System"
+          target="_blank"
+          class="box"
+        >
+          <img src="images/companymgmt.jpg" alt="" />
+          <div class="info">Company Management System</div>
+        </a>
+      </div>
+    </section>
+    <!-- <section class="contactme">
+       
+    </section> -->
+    <!-- footer start -->
+    <footer class="footer" id="footer">
+      <div class="section container footer">
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/diamond.saroha/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/SarohaShrest" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Shrestdtu" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/diamond_saroha/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shrest-saroha-9102b01a2/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>© All rights reserved | Designed by Shrest</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-   <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
